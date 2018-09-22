@@ -1,0 +1,54 @@
+.container {
+    .services-row {
+        padding-top: 35px;
+        padding-bottom: 76px;
+        .services-col {
+            text-align: center;
+            //img {
+            //    width: 85px;
+            //    height: 85px;
+            //    margin: 77px auto 0;
+            //    background-image: url('../images/portfolio-images/services-spritesheet.png');
+            //}
+            .service-icons {
+                width: 85px;
+                height: 85px;
+                margin: 77px auto 0;
+                background-image: url('../images/services-spritesheet.png');
+                background-repeat: no-repeat;
+            }
+            .logo-design-icon {
+                background-position: -5px -95px;
+            }
+            .web-design-icon {
+
+                background-position: -95px -95px;
+            }
+            .branding-icon {
+                  background-position: -5px -5px;
+            }
+            .illustration-icon {
+                background-position: -95px -5px;
+            }
+            h1 {
+                font-size: 18px;
+                font-weight: $font-weight-semibold;
+                font-family: $font-family-heading-column;
+                color: $color-text-secondary;
+                text-transform: uppercase;
+            }
+            hr {
+                width: 15%;
+                border-bottom: 1px solid black;
+            }
+            p {
+                margin-top: -3px;
+                line-height: 20px;
+                font-size: 12px;
+                font-weight: $font-weight-light;
+                font-family: $font-family-primary;
+                color: $color-text-secondary-lighter;
+            }
+        }
+    }
+}

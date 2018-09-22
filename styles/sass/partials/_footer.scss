@@ -1,0 +1,74 @@
+footer {
+    position: relative;
+    height: 90px;
+    p {
+        margin: 35px 0 0 111px;
+        float: left;
+        font-family: 'Montserrat', sans-serif;
+        color: $color-text-secondary-lighter;
+        font-size: 12px;
+        font-weight: $font-weight-regular;
+    }
+    ul {
+        margin: 32px 110px 0 0;
+        list-style: none;
+        float: right;
+        li {
+            display: inline-block;
+            margin-left: 9px;
+            a {
+                i {
+                    background: gray;
+                    color: white;
+                    padding: 7px;
+                    border-radius: 50px;
+                }
+                .fa-facebook {
+                    padding: 7px 10px;
+                }
+            }
+        }
+    }
+    .top {
+        padding: 12px 25px;
+        background: #00a5ff;
+        color: white;
+        font-size: 28px;
+        border-radius: 50%;
+        position: absolute;
+        left: 47.6%;
+        top: -38%;
+        &:focus,
+        &:hover,
+        &:visited {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+@media (max-width: 543px) {
+    footer {
+        ul {
+            padding-left: 0;
+            margin: 45px 0;
+            li {
+                margin: 0;
+            }
+        }
+        p {
+            text-align: center;
+            margin: 57px 0;
+            display: block;
+        }
+    }
+}
+@media (min-width: 544px) and (max-width: 767px) {
+    footer {
+        ul {
+            margin-right: 40px;
+        }
+        p {
+            margin-left: 40px;
+        }
+    }
+}

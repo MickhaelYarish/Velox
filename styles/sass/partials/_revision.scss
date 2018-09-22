@@ -1,0 +1,171 @@
+.carousel-header {
+    position: absolute;
+    z-index: 1000;
+    padding-bottom:55px;
+    margin-top: 25px;
+}
+#revision-carousel {
+    margin:0px -15px;
+  padding-bottom:50px;
+    background: #f5f6f8;
+    .carousel-item {
+        height: 400px;
+        .nav-tabs {
+            margin-top: -8px;
+            text-align: center;
+            border-bottom: 0;
+            .nav-item {
+                margin: 0 20px;
+                display: inline-block;
+                float: none;
+                .nav-link {
+                    border: none;
+                    opacity: 0.4;
+                    img {
+                        width: 112px;
+                        height: 112px;
+                        border-radius: 50%;
+                    }
+                }
+                .active {
+                    background: none;
+                    opacity: 1;
+                    & img {
+                        height: 134px;
+                        width: 134px;
+                    }
+                }
+            }
+        }
+        .carousel-caption {
+            position: relative;
+            right: 0;
+            left: 0;
+            margin: 14px 350px;
+            h2 {
+              line-height:30px;
+                text-shadow: none;
+                font-size: 24px;
+                font-weight: $font-weight-regular;
+                font-family: $font-family-heading;
+                color: $color-text-secondary;
+            }
+            p {
+                @extend h2;
+                  margin-top:29px;
+                font-size: 18px;
+                font-family: $font-family-primary;
+                a {
+                    @extend p;
+                    text-decoration: underline;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .carousel-control.left,
+    .carousel-control.right {
+        background: #f5f6f8;
+        background-image: none;
+        color: #7c8ca0;
+    }
+    .carousel-indicators {
+        bottom:45px;
+        li {
+            background: gray;
+            border: none;
+            margin:0 7px;
+
+        }
+        .active {
+            width: 10px;
+            height: 10px;
+            background: black;
+        }
+    }
+}
+@media (max-width: 543px) {
+  #revision-carousel {
+
+      .carousel-item {
+
+        height:620px;
+          .nav-tabs {
+              .nav-item {
+                  margin: 0px 0px;
+                  display:block;
+                  .nav-link {
+                      img {
+                          width: 90px;
+                          height: 90px;
+                      }
+                  }
+                  .active {
+                      & img {
+                          height: 120px;
+                          width: 120px;
+                      }
+                  }
+              }
+          }
+          .carousel-caption {
+              margin: 40px 0px;
+
+          }
+      }
+      .carousel-indicators {
+        display:none
+      }
+  }
+
+}
+@media (min-width: 544px) and (max-width: 767px) {
+    #revision-carousel {
+        .carousel-item {
+          height:450px;
+            .nav-tabs {
+                .nav-item {
+                    margin: 0px -10px;
+                    .nav-link {
+                        img {
+                            width: 92px;
+                            height: 92px;
+                        }
+                    }
+                    .active {
+                        & img {
+                            height: 114px;
+                            width: 114px;
+                        }
+                    }
+                }
+            }
+            .carousel-caption {
+                margin: 40px 80px;
+
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    #revision-carousel {
+        .carousel-item {
+          height:420px;
+            .carousel-caption {
+                margin: 40px 160px;
+            }
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    #revision-carousel {
+        .carousel-item {
+            .carousel-caption {
+                margin: 40px 240px;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {}

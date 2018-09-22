@@ -1,0 +1,242 @@
+//height:460px
+.form-block {
+    height: 682px;
+    background: #3b404c;
+    .form-navigation {
+        height: 160px;
+        h2,
+        li,
+        ul {
+            display: inline-block;
+        }
+        h2,
+        ul {
+            margin-right: 110px;
+            margin-top: 75px;
+        }
+        h2 {
+            margin-left: 110px;
+            float: left;
+            font-family: $font-family-heading;
+            font-size: 33.33px;
+            font-weight: $font-weight-bold;
+            color: $color-text-primary;
+        }
+        ul {
+          padding-left:0px;
+            float: right;
+            li {
+                margin-left: 20px;
+            }
+            li:first-child{
+              margin-left: 0px;
+            }
+        }
+        a {
+            font-family: $font-family-primary;
+            font-size: 20.83px;
+            font-weight: $font-weight-regular;
+            color: $color-text-primary;
+            &:hover {
+                text-decoration: none;
+                color: $color-text-secondary-lighter;
+            }
+        }
+    }
+    .form-row {
+        margin: 0 110px;
+        .contacts-info {
+            margin-top: 65px;
+            font-family: $font-family-primary;
+            color: $color-text-primary;
+            .contact-block {
+                padding: 0;
+                margin-bottom: 38px;
+                h3 {
+                    text-transform: uppercase;
+                    font-size: 24px;
+                    font-weight: $font-weight-semibold;
+                }
+                ul {
+                    margin-top: 15px;
+                    padding: 0;
+                    list-style: none;
+
+                }
+                p,
+                ul li {
+                    color: $color-text-secondary-lighter;
+                    font-size: 18px;
+                    font-weight: $font-weight-regular;
+                }
+                p {
+                  
+                    word-wrap:break-word;
+                    margin-top: 16px;
+
+                }
+            }
+        }
+        .form-block {
+            height: 486px;
+            margin-top: 35px;
+            padding: 0;
+            form {
+                .text-block {
+                    padding: 0;
+                }
+                .text-area-block {
+                    padding: 0;
+                    margin-top: 25px;
+                }
+                .form-group {
+                    label {
+                        color: $color-text-primary;
+                        font-weight: $font-weight-regular;
+                        font-family: $font-family-primary;
+                        font-size: 25.76px;
+                    }
+                    .form-control {
+                        margin-top: 8px;
+                        background: none;
+                        border: none;
+                        border-bottom: 1px solid $color-text-secondary-lighter;
+                        border-radius: none;
+                        border-radius: 0;
+                        color: $color-accent;
+                        &:focus {
+                            border-bottom-color: $color-accent;
+                            color: $color-accent;
+                        }
+                    }
+                    .textarea {
+                        margin-top: 50px;
+                        resize: none;
+                    }
+                }
+                button {
+                    background: $color-accent;
+                    margin-left: 13px;
+                    margin-top: 21px;
+                    color: #ffffff;
+                    padding: 14px 48px;
+                    border-radius: 30px;
+                    font-family: $font-family-primary;
+                    font-weight: $font-weight-semibold;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 543px) {
+    .form-block {
+        height: 1050px;
+        .form-navigation {
+            border-top: 1px solid white;
+            text-align: center;
+            h2 {
+                float: none;
+                margin: 75px 0 0;
+                display: block;
+            }
+            ul {
+                padding: 0;
+                float: none;
+                margin: 38px 0 0;
+            }
+        }
+        .form-row {
+            margin: 0 8px;
+            .contacts-info .contact-block {
+                margin-bottom: 0;
+                h3 {
+                  text-align:center;
+                    margin-top: 35px;
+                    font-size: 18px;
+                }
+                ul li {
+                    font-size: 14px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            .form-block form button {
+                display: block;
+                padding: 10px 38px;
+                margin:0 auto;
+            }
+        }
+    }
+}
+@media (min-width: 544px) and (max-width: 767px) {
+    .form-block {
+        height: 1000px;
+        .form-navigation {
+            border-top: 1px solid white;
+            text-align: center;
+            h2 {
+                float: none;
+                margin: 75px 0 0;
+                display: block;
+            }
+            ul {
+                padding: 0;
+                float: none;
+                margin: 38px 0 0;
+            }
+        }
+        .form-row {
+            margin: 0 30px;
+            .contacts-info .contact-block {
+                margin-bottom: 0;
+                padding:0 20px;
+                h3 {
+                    font-size: 18px;
+                }
+                ul li {
+                    font-size: 14px;
+                }
+            }
+            .form-block form button {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .form-block {
+        .form-navigation {
+            margin: 0 35px;
+            h2 {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            ul {
+                margin-right: 0;
+            }
+        }
+        .form-row {
+            margin: 0 50px;
+            .form-block form .text-block {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .form-block {
+        .form-navigation {
+              margin: 0 40px;
+            h2 {
+                margin-left: 20px;
+            }
+            ul {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {}

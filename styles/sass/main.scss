@@ -1,0 +1,57 @@
+@import 'config/_manifest';
+
+//Shared styles
+//These styles are used across entire page
+.header-style{
+  text-align:center;
+  font-family:$font-family-heading;
+  font-size:41.67px;
+  font-weight:$font-weight-bold;
+  color:$color-text-secondary;
+  text-transform:uppercase;
+}
+.heading-hr{
+  width:130px;
+  border-bottom:4px solid $color-accent;
+  margin-top:-7px;
+}
+.main-button{
+  text-decoration:none;
+  color:$color-text-primary;
+  font-weight:$font-weight-semibold;
+  font-size:25px;
+  font-family:$font-family-primary;
+  padding: 18px 55px;
+  background: $color-accent;
+  border-radius: 50px;
+  &:hover{
+    text-decoration:none;
+    color:$color-text-primary;
+  }
+}
+.main-button{
+  -webkit-transition: background 0.8s; 
+   transition: background 0.8s;
+}
+.main-button:hover, .portfolio-row .button-container .main-button:hover{
+  background:#f5f6f8;
+  color:$color-accent;
+  box-shadow:none;
+}
+@media(max-width:543px){
+.main-button{
+  font-size:4.6vw;
+  padding: 12px 24px;
+}
+}
+
+//End of shared styles
+
+//Page parts import
+@import 'partials/_header';
+@import 'partials/_services-row';
+@import 'partials/_portfolio-row';
+@import 'partials/_brands';
+@import 'partials/_revision';
+@import 'partials/_form';
+@import 'partials/_footer';

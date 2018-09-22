@@ -1,0 +1,161 @@
+header {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    -moz-background-size: cover;
+    background-position: center;
+    //Navbar
+    .navbar {
+        border-radius: 0;
+        background: none;
+        padding: 1.43% 0 0;
+        .navbar-brand {
+            margin-right: 0;
+            margin-left: 8.14%;
+        }
+        .navbar-nav {
+            float: right;
+            margin-right: 6.2%;
+            .nav-item {
+                margin-right: 20px;
+                padding: 6px;
+                &:nth-of-type(3) {
+                    margin-right: 31px;
+                }
+                &:nth-of-type(1),
+                &:nth-of-type(2) {
+                    margin-right: 30px;
+                }
+                .nav-link {
+                    font-size: 14px;
+                    font-family: $font-family-primary;
+                    font-weight: $font-weight-regular;
+                    color: $color-text-primary;
+                    &:hover{
+                      color:$color-text-secondary-lighter;
+                    }
+                }
+            }
+        }
+    }
+    //End of Navbar
+    .description-box {
+        padding-bottom: 158px;
+        padding-top: 156px;
+        text-align: center;
+        margin: 0 20px;
+        h1 {
+            color: $color-text-primary;
+            font-size: 58.33px;
+            font-family: $font-family-heading;
+            font-weight: $font-weight-bold;
+        }
+        h2 {
+            display: block;
+            margin-top: -6px;
+            margin-bottom: 104px;
+            color: $color-text-primary;
+            font-weight: $font-weight-regular;
+            font-size: 25px;
+            font-family: $font-family-primary;
+        }
+    }
+}
+@media (max-width: 543px) {
+    header {
+        .navbar {
+            .navbar-toggler {
+                position: absolute;
+                right: 0;
+                padding: 6px 12px;
+                color: white;
+            }
+            .navbar-brand {
+                display: block;
+            }
+            .navbar-nav {
+                width: 100%;
+                margin-right: 0;
+                margin-top: 10px;
+                .nav-item {
+                    display: block;
+                    text-align: center;
+                    margin-right: 0;
+                    &+ .nav-item {
+                        margin-right: 0;
+                    }
+                    &:nth-of-type(3) {
+                        margin-right: 0;
+                    }
+                    &:nth-of-type(1),
+                    &:nth-of-type(2) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .description-box {
+            padding-top: 36px;
+            h1 {
+                font-size: 11vw;
+            }
+            h2 {
+                margin-bottom: 40px;
+                font-size: 5.3vw;
+            }
+        }
+    }
+}
+@media (min-width: 544px) and (max-width: 767px) {
+    header {
+        .navbar {
+            .navbar-brand {
+                margin-left: 2.14%;
+            }
+            .navbar-nav {
+                margin-right: 1%;
+                .nav-item {
+                    &+ .nav-item {
+                        margin-left: 0;
+                    }
+                    margin-right: 2.8vw;
+                    padding: 6px 2px;
+                    &:nth-of-type(3) {
+                        margin-right: 2.8vw;
+                    }
+                    &:nth-of-type(1),
+                    &:nth-of-type(2) {
+                        margin-right: 2.8vw;
+                    }
+                }
+            }
+        }
+        .description-box {
+            padding-top: 66px;
+            h2 {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    header {
+        .navbar {
+            .navbar-nav {
+                margin-right: 6.2%;
+                .nav-item {
+                    margin-right: 5px;
+                    padding: 6px;
+                    &:nth-of-type(3) {
+                        margin-right: 5px;
+                    }
+                    &:nth-of-type(1),
+                    &:nth-of-type(2) {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 1200px) {}

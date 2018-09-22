@@ -1,0 +1,114 @@
+.portfolio-row {
+  padding-bottom:85px;
+    text-align: center;
+    background: #f5f6f8;
+    .nav-tabs {
+        margin-top: 28px;
+        border-bottom: none;
+        .nav-item {
+            padding: 0.5em 0;
+            display: inline-block;
+            float: none;
+            margin: 0 24px;
+            &+ .nav-item {
+                @extend .nav-item;
+            }
+            .nav-link {
+                font-family: $font-family-primary;
+                font-weight: $font-weight-regular;
+                font-size: 14px;
+                padding: 0 0 7px;
+                text-transform: uppercase;
+                border: none;
+                color: $color-text-secondary;
+                background: none;
+                &:active,
+                &:focus {
+                    color: $color-accent;
+                    border-bottom: 1px solid $color-accent;
+                    background: none;
+                }
+            }
+            .active {
+                @extend .nav-link;
+                color: $color-accent;
+                border-bottom: 1px solid $color-accent;
+            }
+        }
+    }
+    //Panels row
+    .panels-row {
+        margin: -12px 80px;
+        .portfolio-block {
+            padding: 0 6px;
+            margin-top: 36px;
+            h2 {
+                margin: 16px 0 0 32px;
+                text-align: left;
+                font-size: 18px;
+                font-weight: $font-weight-semibold;
+                font-family: $font-family-primary;
+                color: $color-text-secondary-lighter;
+            }
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+    //End of panels row
+    .button-container{
+       margin-top:120px;
+       .main-button{
+         text-transform:uppercase;
+         padding:14px 68px;
+             box-shadow: inset 0 -9px 6px -4px #c6c7c8;
+       }
+
+    }
+
+}
+@media (max-width: 543px) {
+    .portfolio-row {
+        .panels-row {
+            margin: 0 -10px;
+            .portfolio-block{
+              h2{
+                text-align:center;
+                margin-left:0px;
+              }
+            }
+        }
+        .nav-tabs{
+          .nav-item{
+          margin:0px 12px;
+          }
+        }
+        .button-container{
+          margin-top:80px;
+        }
+
+    }
+}
+@media (min-width: 544px) and (max-width: 767px) {
+    .portfolio-row {
+        .panels-row {
+            margin: 0 -10px;
+        }
+
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .portfolio-row {
+        .panels-row {
+            margin: 0 20px;
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .portfolio-row {
+        .panels-row {
+            margin: 0 40px;
+        }
+    }
+}
+@media (min-width: 1200px) {}

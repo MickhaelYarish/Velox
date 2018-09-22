@@ -1,0 +1,30 @@
+//Color palette
+$white-color:#ffffff;
+$arsenic:#3a3f4b;
+$spanish-gray:#999999;
+$vivid-cerulean:#00a5ff;
+
+//Colors usage
+$color-text-primary:$white-color;
+$color-text-secondary:$arsenic;
+$color-text-secondary-lighter:$spanish-gray;
+$color-accent:$vivid-cerulean;
+
+//Fonts
+$source-sans-pro:'Source Sans Pro', sans-serif;
+$lora:'Lora', serif;
+$open-sans:'Open Sans', sans-serif;
+
+//Fonts usage
+$font-family-heading:$lora;
+$font-family-primary:$open-sans;
+$font-family-heading-column:$source-sans-pro;
+
+//Font weight
+$font-weight-thin:100;
+$font-weight-light:300;
+$font-weight-regular:400;
+$font-weight-medium:500;
+$font-weight-semibold:600;
+$font-weight-bold:700;
+$font-weight-black:900;
